@@ -9,9 +9,6 @@ import { TranslatePipe } from '@/locales/TranslatePipe';
 })
 export class Counter {
   protected readonly count = signal(0);
-  protected readonly t = (msg: string, values: Record<string, any>) => {
-    return msg.replace(/\{(\w+)\}/g, (_, name) => values[name] ?? name);
-  };
 
   public increment() {
     this.count.update((c) => c + 1);
