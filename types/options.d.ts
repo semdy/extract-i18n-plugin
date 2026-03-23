@@ -4,6 +4,7 @@ export type LangKey = "zh-cn" | "zh-tw" | "en" | "ja" | "ko" | "ru" | string;
 
 export interface I18nOptions {
   translateKey: string;
+  importIdentifier: string | null;
   JSXElement: string;
   hooksIdentifier: string;
   injectHooks: boolean;
@@ -21,6 +22,7 @@ export interface I18nOptions {
   enabled: boolean;
   debug: boolean;
   translateInterval: number;
+  extraImports: { name: string; as?: string; path: string }[] | null;
   excludedCall: string[];
   includePath: string[] | string;
   excludedPath: string[] | string;

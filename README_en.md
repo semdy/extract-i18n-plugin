@@ -56,6 +56,7 @@ extractI18n(options)
 ```javascript
 const defaultOptions = {
   translateKey: "$t", // Name of the extraction function
+  importIdentifier: null, // Name of the import function，if null, use translateKey instead
   JSXElement: "Trans", // JSX element name for extraction, e.g., <Trans id="aaa" msg="xxx" />
   hooksIdentifier: "useTranslation", // Hook name injected into component, injects const { $t } = useTranslation()
   injectHooks: false, // Whether to automatically inject useTranslation into components
@@ -73,6 +74,7 @@ const defaultOptions = {
   enabled: true, // Whether to enable the plugin
   debug: true, // Whether to print logs
   translateInterval: 1000, // Time interval between translating different languages, may be throttled if too short
+  extraImports: null, // extra imports, format: [{ name: "t", as?: "_t" path: "@/i18n" }]
   excludedCall: [], // Array of function names to exclude, built-in functions: see https://github.com/semdy/extract-i18n-plugin/blob/main/lib/utils.js#L244
   includePath: ['src/'], // Array of paths to include
   excludedPath: ['**/node_modules/**'], // Array of paths to exclude, refer to https://github.com/mrmlnc/fast-glob?tab=readme-ov-file#how-to-exclude-directory-from-reading
