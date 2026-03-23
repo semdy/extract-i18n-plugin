@@ -2,7 +2,7 @@ import Component from '@glimmer/component';
 import { on } from '@ember/modifier';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
-import { t } from 'example-ember/locales/helper';
+import { t } from 'example-ember/locales';
 
 export default class CounterComponent extends Component {
   @tracked count = 0;

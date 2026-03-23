@@ -81,3 +81,5 @@ export function changeLanguage(lang) {
 export function setupIntl(intlInstance) {
   intl = intlInstance;
 }
+
+export { THelper as t } from './helper';

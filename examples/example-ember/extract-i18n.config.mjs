@@ -17,7 +17,8 @@ export default defineConfig({
   keepDefaultMsg: process.env.NODE_ENV === 'development',
   outputPath: 'app/locales/gen',
   i18nPkgImportPath: 'example-ember/locales',
-  extraImports: [{ name: 't', path: 'example-ember/locales/helper' }],
+  extraImportIdentifier: ['t'],
+  // extraImports: [{ name: 't', path: 'example-ember/locales/helper' }],
   translateLangKeys: ['en', 'zh-tw', 'ja', 'ko'],
   customTranslatedText: (text, toLang) => {
     if (toLang === 'en') {

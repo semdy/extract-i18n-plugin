@@ -1,5 +1,5 @@
 import { pageTitle } from 'ember-page-title';
-import { t } from 'example-ember/locales/helper';
+import { t } from 'example-ember/locales';
 import Counter from 'example-ember/components/counter';
 import LocaleSelect from 'example-ember/components/locale-select';
 
