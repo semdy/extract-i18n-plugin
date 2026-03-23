@@ -61,11 +61,7 @@ type TranslateArgs =
   | [values: TranslateValues]
   | [defaultMsg: string, values: TranslateValues];
 
-function formatMessage(
-  locale: SupportLocale,
-  key: string,
-  ...args: TranslateArgs
-): string {
+function formatMessage(locale: SupportLocale, key: string, ...args: TranslateArgs): string {
   const [arg2, arg3] = args;
   let defaultMsg: string | undefined;
   let values: TranslateValues | undefined;
