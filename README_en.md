@@ -56,6 +56,7 @@ extractI18n(options)
 ```javascript
 const defaultOptions = {
   translateKey: "$t", // Name of the extraction function
+  translateKeyForTemplate: null, // Name of the extraction helper，only for ember template
   importIdentifier: null, // Name of the import function，if null, use translateKey instead
   JSXElement: "Trans", // JSX element name for extraction, e.g., <Trans id="aaa" msg="xxx" />
   hooksIdentifier: "useTranslation", // Hook name injected into component, injects const { $t } = useTranslation()

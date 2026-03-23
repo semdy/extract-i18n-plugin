@@ -4,6 +4,7 @@ export type LangKey = "zh-cn" | "zh-tw" | "en" | "ja" | "ko" | "ru" | string;
 
 export interface I18nOptions {
   translateKey: string;
+  translateKeyForTemplate: string | null;
   importIdentifier: string | null;
   JSXElement: string;
   hooksIdentifier: string;

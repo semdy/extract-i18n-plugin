@@ -56,6 +56,7 @@ extractI18n(options)
 ```javascript
 const defaultOptions = {
   translateKey: "$t", // 提取的函数的名称
+  translateKeyForTemplate: null, // 在模板中要提取的函数名称，只对ember模板生效
   importIdentifier: null, // 导入的标识符名称，如果不传则默认为translateKey配置的值
   JSXElement: "Trans", // 提取的函数的 JSX 元素名称 默认为 Trans, 如：<Trans id="aaa" msg="xxx" />
   hooksIdentifier: "useTranslation", // 注入到组件的hook名称, 会注入const { $t } = useTranslation()，其中$t为translateKey的引用值
