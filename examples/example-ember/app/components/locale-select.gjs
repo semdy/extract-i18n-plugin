@@ -2,10 +2,7 @@ import Component from '@glimmer/component';
 import { on } from '@ember/modifier';
 import { action } from '@ember/object';
 import { service } from '@ember/service';
-import {
-  changeLanguage,
-  languageList,
-} from 'example-ember/instance-initializers/intl';
+import { changeLanguage, languageList } from 'example-ember/locales';
 
 export default class LocaleSelectComponent extends Component {
   @service intl;
