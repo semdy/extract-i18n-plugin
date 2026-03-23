@@ -76,6 +76,7 @@ const defaultOptions = {
   debug: true, // 是否打印日志
   translateInterval: 1000, // 翻译不同语种的间隔时间, 时间过短时可能会被限流
   extraImports: null, // 额外的导入项, 格式：[{ name: "t", as?: "_t" path: "@/i18n" }]
+  extraImportIdentifier: null, // 额外的导入项的标识符名称，如：['customImport'] -> import { t, customImport } from "@/i18n"
   excludedCall: [], // 排除的调用函数名称数组，目前已内置的函数请参阅：https://github.com/semdy/extract-i18n-plugin/blob/main/lib/utils.js#L244
   includePath: ['src/'], // 包含路径的数组
   excludedPath: ['**/node_modules/**'], // 排除路径的数组 refer to https://github.com/mrmlnc/fast-glob?tab=readme-ov-file#how-to-exclude-directory-from-reading

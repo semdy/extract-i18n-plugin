@@ -24,6 +24,7 @@ export interface I18nOptions {
   debug: boolean;
   translateInterval: number;
   extraImports: { name: string; as?: string; path: string }[] | null;
+  extraImportIdentifier: string | string[] | null;
   excludedCall: string[];
   includePath: string[] | string;
   excludedPath: string[] | string;

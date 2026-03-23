@@ -76,6 +76,7 @@ const defaultOptions = {
   debug: true, // Whether to print logs
   translateInterval: 1000, // Time interval between translating different languages, may be throttled if too short
   extraImports: null, // extra imports, format: [{ name: "t", as?: "_t" path: "@/i18n" }]
+  extraImportIdentifier: null, // extra import identifier, such as：['customImport'] -> import { t, customImport } from "@/i18n"
   excludedCall: [], // Array of function names to exclude, built-in functions: see https://github.com/semdy/extract-i18n-plugin/blob/main/lib/utils.js#L244
   includePath: ['src/'], // Array of paths to include
   excludedPath: ['**/node_modules/**'], // Array of paths to exclude, refer to https://github.com/mrmlnc/fast-glob?tab=readme-ov-file#how-to-exclude-directory-from-reading
