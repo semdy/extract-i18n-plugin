@@ -10,5 +10,5 @@ module.exports = override(
   addWebpackAlias({
     "@": path.resolve(__dirname, "src")
   }),
-  addWebpackPlugin(new WebpackPluginI18n())
+  addWebpackPlugin(new WebpackPluginI18n.default())
 );

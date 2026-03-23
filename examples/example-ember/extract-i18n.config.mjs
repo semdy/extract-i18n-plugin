@@ -3,12 +3,7 @@ import { GoogleTranslator } from 'extract-i18n-plugin/translators';
 
 export default defineConfig({
   includePath: ['app'],
-  excludedPath: [
-    '**/node_modules/**',
-    '**/app/translations',
-    '**/app/instance-initializers',
-    '**/app/components/locale-select.gjs',
-  ],
+  excludedPath: ['**/node_modules/**', '**/app/locales'],
   excludedCall: ['formatAppLog', '__f__'],
   translateKey: '$t',
   translateKeyForTemplate: 't',

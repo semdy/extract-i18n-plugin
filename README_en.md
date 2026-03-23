@@ -183,7 +183,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html"
     }),
-    new WebpackPluginI18n(userConfig)
+    new WebpackPluginI18n.default(userConfig)
   ]
 };
 ```
