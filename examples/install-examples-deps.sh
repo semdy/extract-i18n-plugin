@@ -1,6 +1,7 @@
 cd ./example-angular && yarn add extract-i18n-plugin@latest -D && yarn install
 cd ../example-AOT && yarn add extract-i18n-plugin@latest -D && yarn install
 cd ../example-cra && yarn add extract-i18n-plugin@latest -D && yarn install
+cd ../example-ember && yarn add extract-i18n-plugin@latest -D && yarn install
 cd ../example-lit && yarn add extract-i18n-plugin@latest -D && yarn install
 cd ../example-marko && yarn add extract-i18n-plugin@latest -D && yarn install
 cd ../example-preact && yarn add extract-i18n-plugin@latest -D && yarn install
