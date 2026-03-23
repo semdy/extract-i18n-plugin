@@ -54,23 +54,21 @@ export const languageList: {
 
 export let locale = getClientLocale();
 
-function formatMessage(locale: SupportLocale, key: string): string;
-function formatMessage(locale: SupportLocale, key: string, defaultMsg: string): string;
-function formatMessage(locale: SupportLocale, key: string, values: Record<string, any>): string;
+type TranslateValues = Record<string, any>;
+type TranslateArgs =
+  | []
+  | [defaultMsg: string]
+  | [values: TranslateValues]
+  | [defaultMsg: string, values: TranslateValues];
+
 function formatMessage(
   locale: SupportLocale,
   key: string,
-  defaultMsg: string,
-  values: Record<string, any>,
-): string;
-function formatMessage(
-  locale: SupportLocale,
-  key: string,
-  arg2?: string | Record<string, any>,
-  arg3?: Record<string, any>,
+  ...args: TranslateArgs
 ): string {
+  const [arg2, arg3] = args;
   let defaultMsg: string | undefined;
-  let values: Record<string, any> | undefined;
+  let values: TranslateValues | undefined;
 
   if (typeof arg2 === 'string') {
     defaultMsg = arg2;
@@ -90,16 +88,8 @@ function formatMessage(
   return msg;
 }
 
-export function t(key: string): string;
-export function t(key: string, defaultMsg: string): string;
-export function t(key: string, values: Record<string, any>): string;
-export function t(key: string, defaultMsg: string, values: Record<string, any>): string;
-export function t(
-  key: string,
-  arg2?: string | Record<string, any>,
-  arg3?: Record<string, any>,
-): string {
-  return formatMessage(locale, key, arg2 as any, arg3 as any);
+export function t(key: string, ...args: TranslateArgs): string {
+  return formatMessage(locale, key, ...args);
 }
 
 @Injectable({ providedIn: 'root' })
@@ -110,12 +100,8 @@ export class I18nService {
 
   public currentLocale = this.locale.asReadonly();
 
-  public t(key: string): string;
-  public t(key: string, defaultMsg: string): string;
-  public t(key: string, values: Record<string, any>): string;
-  public t(key: string, defaultMsg: string, values: Record<string, any>): string;
-  public t(key: string, arg2?: string | Record<string, any>, arg3?: Record<string, any>): string {
-    return formatMessage(this.locale(), key, arg2 as any, arg3 as any);
+  public t(key: string, ...args: TranslateArgs): string {
+    return formatMessage(this.locale(), key, ...args);
   }
 
   setLocale(lang: SupportLocale) {
