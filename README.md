@@ -341,6 +341,8 @@ export default i18n;
 
 - Angular底层编译工具链不基于babel，因此只能开启`rewrite`模式进行AOT编译，`<div>文本</div>`会被编译成`pipe`风格`<div>{{ 'id' | t }}</div>`.
 
+- Ember的模板编译产物是纯字符串，该插件无法参与其中做二次转换，因此也只支持`rewrite`AOT编译模式。
+
 - 基于uni-app的小程序项目的建议：开发时直接写纯文本，然后使用`extract-i18n --rewrite --keepRaw`转换，会将`"文本"`转换成`$t("文本")`并写入源码，不然该插件将无法正常工作，因为根据uni-app编译器策略，静态文本会保留在wxml文件中，只有动态内容才会编译到js文件中，这样才能被正常提取和转换。
 
 - uni-app X项目底层编译器是kotlin, 需要提前将源码进行转换。建议使用`extract-i18n --rewrite --keepDefaultMsg`将`"文本"`转换成`$t("id","文本")`，这样既保证了i18n的功能也不影响对源码的阅读。

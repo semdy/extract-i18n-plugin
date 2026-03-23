@@ -343,6 +343,8 @@ Additionally: If you don't want to use vite/webpack plugins, you can manually ca
 
 - Angular’s underlying compilation toolchain is not based on Babel. Therefore, only the `rewrite` mode can be enabled to support AOT compilation. For example, <div>xxxx</div> will be transformed into a pipe-based expression: <div>{{ 'id' | t }}</div>.
 
+- Ember's template compilation output consists of pure strings, since this plugin cannot intervene to perform secondary transformations, it supports only the `rewrite` AOT compilation mode.
+
 - Recommendations for uni-app mini-program projects: Write plain text during development, then use `extract-i18n --rewrite --keepRaw` to convert, transforming `"text"` to `$t("text")` and writing to source code. The plugin won't work normally otherwise because according to uni-app compiler strategy, static text is kept in wxml files while only dynamic content is compiled to js files, allowing proper extraction and transformation.
 
 - For uni-app X projects with Kotlin-based underlying compiler, source code must be pre-converted. Recommended to use `extract-i18n --rewrite --keepDefaultMsg` to convert `"text"` to `$t("id","text")`, ensuring i18n functionality while maintaining source code readability.
