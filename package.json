@@ -1,6 +1,6 @@
 {
   "name": "extract-i18n-plugin",
-  "version": "1.1.29",
+  "version": "1.1.30",
   "type": "module",
   "module": "lib/index.js",
   "main": "cjs/index.cjs",
@@ -13,6 +13,11 @@
       "types": "./types/index.d.ts",
       "require": "./cjs/index.cjs",
       "import": "./lib/index.js"
+    },
+    "./options": {
+      "types": "./types/options.d.ts",
+      "require": "./cjs/options.cjs",
+      "import": "./lib/options.js"
     },
     "./translators": {
       "types": "./types/translators/index.d.ts",

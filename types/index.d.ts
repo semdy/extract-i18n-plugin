@@ -1,5 +1,7 @@
+import { I18nOptions, ExtractI18nConfig } from "./options";
+
 export { extractI18n } from "./extract";
-import { I18nOptions } from "./options";
+export { I18nOptions, ExtractI18nConfig, LangKey } from "./options";
 export {
   autoTranslate,
   translateChunks,
@@ -42,8 +44,6 @@ export {
 declare const defaultOptions: I18nOptions;
 
 export { defaultOptions };
-
-export type ExtractI18nConfig = Partial<I18nOptions>;
 
 export function defineConfig(
   options: ExtractI18nConfig | (() => ExtractI18nConfig)

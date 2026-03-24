@@ -42,3 +42,5 @@ export interface I18nOptions {
   customTranslatedText: (text: string, toLang: LangKey) => string;
   translator: Translator;
 }
+
+export type ExtractI18nConfig = Partial<I18nOptions>;
