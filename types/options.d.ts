@@ -2,7 +2,7 @@ import { Translator } from "./translators";
 
 export type LangKey = "zh-cn" | "zh-tw" | "en" | "ja" | "ko" | "ru" | string;
 
-export interface I18nOptions {
+interface I18nOptions {
   translateKey: string;
   translateKeyForTemplate: string | null;
   importIdentifier: string | null;
@@ -44,3 +44,7 @@ export interface I18nOptions {
 }
 
 export type ExtractI18nConfig = Partial<I18nOptions>;
+
+export { I18nOptions };
+
+export default I18nOptions;
