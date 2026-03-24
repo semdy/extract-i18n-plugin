@@ -78,7 +78,7 @@
     "prettier-plugin-marko": "^4",
     "prettier-plugin-svelte": "^3",
     "svelte": "^4 || ^5",
-    "vite": "^5.0.0"
+    "vite": ">5.0.0"
   },
   "peerDependenciesMeta": {
     "@angular/compiler": {
