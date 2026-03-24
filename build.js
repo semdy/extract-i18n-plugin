@@ -15,6 +15,9 @@ await build({
   outbase: "lib",
   bundle: false,
   format: "cjs",
+  outExtension: {
+    ".js": ".cjs"
+  },
   logOverride: {
     "empty-import-meta": "silent"
   },
@@ -22,7 +25,7 @@ await build({
   target: ["node14"]
 });
 
-const cjsFiles = await fg("cjs/**/*.js", {
+const cjsFiles = await fg("cjs/**/*.cjs", {
   onlyFiles: true
 });
 
@@ -39,9 +42,7 @@ await Promise.all(
       .replaceAll("fileURLToPath(__filename)", "__filename")
       .replaceAll("fileURLToPath(import_meta.url)", "__filename")
       .replaceAll("import_meta.url", "__filename");
-    const targetFile = file.replace(/\.js$/, ".cjs");
 
     await fs.writeFile(file, normalizedContents);
-    await fs.move(file, targetFile, { overwrite: true });
   })
 );
