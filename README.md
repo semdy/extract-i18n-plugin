@@ -23,6 +23,8 @@ npm install extract-i18n-plugin -D
 yarn add extract-i18n-plugin -D
 # pnpm
 pnpm add extract-i18n-plugin -D
+# bun
+bun add extract-i18n-plugin -d
 ```
 
 ## CLI
