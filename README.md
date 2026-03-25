@@ -300,7 +300,7 @@ Vue 编译器在编译阶段会进行大量优化，例如：
 
 ### Qwik 编译优化处理
 
-Qwik 编译器同样会在编译阶段对模板进行 静态节点标记。
+Qwik 编译器同样会在编译阶段对模板进行静态节点标记。
 
 当插件对文本节点进行 i18n 转换后，这些原本被标记为静态的节点也需要重新标记为 动态节点，以确保运行时能够正确更新内容。
 
@@ -331,7 +331,7 @@ export const $t = i18n.global.t.bind(i18n.global);
 export default i18n;
 ```
 
-如果不想使用vite/webpack插件，可以手动调用`extract-i18n --rewrite`，这会将转换后的代码重新写入源文件（uni-app X项目可用于此模式）.
+如果不想使用vite/webpack插件，可以手动调用`extract-i18n --rewrite`，这会将转换后的代码重新写入源文件（小程序和uni-app X项目比较适合此模式）.
 
 ## Known issues & Guidelines
 
