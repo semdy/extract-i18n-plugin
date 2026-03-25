@@ -286,7 +286,7 @@ The Vue compiler performs various compile-time optimizations, such as:
 
 - Hoisted dynamic property dependencies (`dynamicProps`)
 
-After the plugin transforms text into i18n function calls, previously static nodes may become dynamic.
+After the plugin transforms text into i18n function calls, previously static nodes should become dynamic.
 
 To ensure correct runtime behavior, the plugin needs to:
 
