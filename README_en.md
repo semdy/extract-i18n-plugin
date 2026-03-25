@@ -333,7 +333,7 @@ export const $t = i18n.global.t.bind(i18n.global);
 export default i18n;
 ```
 
-Additionally: If you don't want to use vite/webpack plugins, you can manually call `extract-i18n --rewrite`, which will rewrite the converted code into source files (useful for uni-app X projects).
+Additionally: If you don't want to use vite/webpack plugins, you can manually call `extract-i18n --rewrite`, which will rewrite the converted code into source files (useful for miniprogram and uni-app X projects).
 
 ## Known Issues & Guidelines
 
