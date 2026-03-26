@@ -62,6 +62,7 @@ const defaultOptions = {
   importIdentifier: null, // 自定义导入的标识符名称，如果不传则默认为translateKey配置的值，对`svelte-i18n`比较有用，例如：`import { t } from "svelte-i18n"`，但模板里使用的是auto-subscription语法`$t()`, 这时如果开启了`rewrite`模式, `importIdentifier`应该设为`t`.
   JSXElement: "Trans", // 提取的函数的 JSX 元素名称 默认为 Trans, 如：<Trans id="aaa" msg="xxx" />
   hooksIdentifier: "useTranslation", // 注入到组件的hook名称, 会注入const { $t } = useTranslation()，其中$t为translateKey的引用值
+  destructuredHooks: true, // 是否生成解构hooks, 如：const { t } = useTranslation()否则生成 const t = useTranslation()
   injectHooks: false, // 是否将useTranslation自动注入到组件中
   jsx: false, // 是否启用 JSX 语法转换，开启后JSX里纯文本将转换为 <Trans id="aaa" msg="xxx" />而不是 $t("aaa")
   rewrite: false, // 是否将提取到的内容转换为id后重写入源文件

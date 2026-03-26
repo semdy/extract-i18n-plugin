@@ -8,6 +8,7 @@ interface I18nOptions {
   importIdentifier: string | null;
   JSXElement: string;
   hooksIdentifier: string;
+  destructuredHooks: boolean;
   injectHooks: boolean;
   jsx: boolean;
   rewrite: boolean;

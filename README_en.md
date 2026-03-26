@@ -60,8 +60,9 @@ const defaultOptions = {
   translateKey: "$t", // Name of the extraction function
   translateKeyForTemplate: null, // Name of the extraction helper，only for ember template
   importIdentifier: null, // Name of the import function，if null, use translateKey instead. It is useful for `svelte-i18n`，such as: `import { t } from "svelte-i18n"`，but it is use auto-subscription syntax `$t()` in template, and so if `rewrite` is enabled, the `importIdentifier` should be set to `t`.
-  JSXElement: "Trans", // JSX element name for extraction, e.g., <Trans id="aaa" msg="xxx" />
+  JSXElement: "Trans", // JSX element name for extraction, e.g. <Trans id="aaa" msg="xxx" />
   hooksIdentifier: "useTranslation", // Hook name injected into component, injects const { $t } = useTranslation()
+  destructuredHooks: true, // if true generate destructured hooks, e.g. const { t } = useTranslation() or generate const t = useTranslation()
   injectHooks: false, // Whether to automatically inject useTranslation into components
   jsx: false, // Enable JSX syntax transformation, pure text in JSX will be converted to <Trans id="aaa" msg="xxx" /> instead of $t("aaa")
   rewrite: false, // Whether to convert extracted content to ID and rewrite into source files
