@@ -100,7 +100,11 @@ export class I18nService {
     return formatMessage(this.locale(), key, ...args);
   }
 
-  setLocale(lang: SupportLocale) {
+  public getLocale(): SupportLocale {
+    return this.locale();
+  }
+
+  public setLocale(lang: SupportLocale) {
     if (locale === lang) return;
     locale = lang;
     this.locale.set(lang);
