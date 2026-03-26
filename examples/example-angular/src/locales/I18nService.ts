@@ -73,7 +73,7 @@ function formatMessage(locale: SupportLocale, key: string, ...args: TranslateArg
     values = arg2;
   }
 
-  let msg = (messages[locale] as Record<string, any>)?.[key] ?? (defaultMsg || key);
+  let msg = (messages[locale] as TranslateValues)?.[key] ?? (defaultMsg || key);
 
   if (values) {
     msg = msg.replace(/\{([^}]+)\}/gm, (match: any, name: string) => {
