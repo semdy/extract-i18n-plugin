@@ -287,7 +287,7 @@ The Vue compiler performs various compile-time optimizations, such as:
 
 - Hoisted dynamic property dependencies (`dynamicProps`)
 
-After the plugin transforms text into i18n function calls, previously static nodes may become dynamic.
+After the plugin transforms text into i18n function calls, previously static nodes should become dynamic.
 
 To ensure correct runtime behavior, the plugin needs to:
 
@@ -334,7 +334,7 @@ export const $t = i18n.global.t.bind(i18n.global);
 export default i18n;
 ```
 
-Additionally: If you don't want to use vite/webpack plugins, you can manually call `extract-i18n --rewrite`, which will rewrite the converted code into source files (useful for uni-app X projects).
+Additionally: If you don't want to use vite/webpack plugins, you can manually call `extract-i18n --rewrite`, which will rewrite the converted code into source files (useful for miniprogram and uni-app X projects).
 
 ## Known Issues & Guidelines
 
