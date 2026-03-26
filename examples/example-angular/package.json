@@ -26,7 +26,7 @@
     "@angular/cli": "^21.2.3",
     "@angular/compiler-cli": "^21.2.0",
     "@tailwindcss/postcss": "^4.1.12",
-    "extract-i18n-plugin": "^1.1.34",
+    "extract-i18n-plugin": "^1.1.35",
     "jsdom": "^28.0.0",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
