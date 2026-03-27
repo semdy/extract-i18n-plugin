@@ -16,5 +16,5 @@
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never"
   },
-  "cSpell.words": []
+  "cSpell.words": ["marko", "nvue", "uvue"]
 }
