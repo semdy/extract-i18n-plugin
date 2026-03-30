@@ -1,7 +1,6 @@
-import { I18nOptions } from './options';
+import { ExtractI18nConfig } from "./options";
 
-declare module 'extract-i18n.config.ts' {
-  const config: Partial<I18nOptions>;
+declare module "extract-i18n.config.ts" {
+  const config: ExtractI18nConfig;
   export default config;
 }
-  

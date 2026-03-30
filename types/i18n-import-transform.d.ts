@@ -6,12 +6,14 @@ export interface TransformResult {
 }
 
 export function i18nImportAstTransform(
-  path: NodePath,
+  programPath: NodePath,
   importName: string,
+  importAs: string,
   importPath: string
 ): TransformResult;
 
 export function babelI18nImportTransform(
-  path: NodePath,
-  options: Partial<I18nOptions>
+  programPath: NodePath,
+  options: Partial<I18nOptions>,
+  state: any
 ): boolean;
