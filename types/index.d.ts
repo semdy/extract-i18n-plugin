@@ -37,9 +37,9 @@ export { webpackI18nImportLoader } from "./webpack-i18n-import-loader";
 export { babelPluginI18n } from "./babel-plugin-i18n";
 export { babelPluginI18nImport } from "./babel-plugin-i18n-import";
 export {
-  i18nImportAstTransform,
-  babelI18nImportTransform
-} from "./i18n-import-transform";
+  injectI18nImport,
+  batchInjectI18nImport
+} from "./i18n-import-injector";
 
 declare const defaultOptions: I18nOptions;
 
