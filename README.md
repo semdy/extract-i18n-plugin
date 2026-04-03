@@ -214,6 +214,33 @@ module.exports = {
 
 babel插件不会自动带入extract-i18n.config.js中的配置，但会带上defaultOptions，优先级：userConfig > defaultOptions
 
+## UmiJS
+
+```javascript
+// config/config.ts
+import { defineConfig } from "@umijs/max";
+import { vitePluginI18n } from "extract-i18n-plugin";
+import userConfig from '../extract-i18n.config';
+
+export default defineConfig({
+  // 方案一（推荐）
+  vite: {
+    plugins: [vitePluginI18n()]
+  }
+  // 方案二
+  extraBabelPlugins: [
+    [
+      'extract-i18n-plugin/babel-plugin-i18n',
+      {
+        ...userConfig,
+      },
+    ],
+  ],
+});
+```
+
+方案一和方案二任选其一.
+
 ## Deprecated
 
 仓库中的`babel-plugin-i18n-import`、`rollup-plugin-i18n-import`、`vite-plugin-i18n-import`、`webpack-i18n-import-loader`已弃用，因为主插件中带有自动生成导入i18n的逻辑。

@@ -214,6 +214,33 @@ module.exports = {
 
 Babel plugin does not automatically include configuration from extract.config.js but includes defaultOptions. Priority: userConfig > defaultOptions
 
+## UmiJS
+
+```javascript
+// config/config.ts
+import { defineConfig } from "@umijs/max";
+import { vitePluginI18n } from "extract-i18n-plugin";
+import userConfig from '../extract-i18n.config';
+
+export default defineConfig({
+  // Approach 1（Recommended）
+  vite: {
+    plugins: [vitePluginI18n()]
+  }
+  // Approach 2
+  extraBabelPlugins: [
+    [
+      'extract-i18n-plugin/babel-plugin-i18n',
+      {
+        ...userConfig,
+      },
+    ],
+  ],
+});
+```
+
+Choose either of the two approaches.
+
 ## Deprecated
 
 The `babel-plugin-i18n-import`, `rollup-plugin-i18n-import`, `vite-plugin-i18n-import`, and `webpack-i18n-import-loader` in the repository are deprecated because the main plugin includes automatic i18n import generation logic.
