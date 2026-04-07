@@ -1,8 +1,8 @@
-import { build } from "esbuild";
-import fg from "fast-glob";
 import fs from "fs-extra";
+import { build } from "esbuild";
+import { glob } from "tinyglobby";
 
-const entryPoints = await fg("lib/**/*.js", {
+const entryPoints = await glob("lib/**/*.js", {
   onlyFiles: true
 });
 
@@ -25,7 +25,7 @@ await build({
   target: ["node14"]
 });
 
-const cjsFiles = await fg("cjs/**/*.cjs", {
+const cjsFiles = await glob("cjs/**/*.cjs", {
   onlyFiles: true
 });
 

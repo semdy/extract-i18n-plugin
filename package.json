@@ -1,6 +1,6 @@
 {
   "name": "extract-i18n-plugin",
-  "version": "1.1.42",
+  "version": "1.1.43",
   "type": "module",
   "module": "lib/index.js",
   "main": "cjs/index.cjs",
@@ -113,15 +113,15 @@
     "@vue/compiler-dom": "^3.5.16",
     "@vue/compiler-sfc": "^3.5.16",
     "axios": "^1.6.8",
-    "c12": "^3.0.4",
+    "c12": "^3.3.4",
     "crypto-js": "^4.2.0",
     "esbuild": "^0.27.2",
     "esbuild-register": "^3.6.0",
-    "fast-glob": "^3.3.3",
     "fs-extra": "^11.3.0",
     "htmljs-parser": "^5.10.2",
     "magic-string": "^0.30.17",
     "prettier": "^3.5.3",
+    "tinyglobby": "^0.2.15",
     "tunnel": "0.0.6"
   },
   "devDependencies": {
