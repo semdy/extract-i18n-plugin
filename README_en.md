@@ -212,7 +212,7 @@ module.exports = {
 };
 ```
 
-Babel plugin does not automatically include configuration from extract.config.js but includes defaultOptions. Priority: userConfig > defaultOptions
+Parameter priority: same as above
 
 ## UmiJS
 

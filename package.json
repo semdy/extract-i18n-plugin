@@ -116,6 +116,7 @@
     "c12": "^4.0.0-beta.4",
     "crypto-js": "^4.2.0",
     "esbuild": "^0.27.2",
+    "esbuild-register": "^3.6.0",
     "fs-extra": "^11.3.0",
     "htmljs-parser": "^5.10.2",
     "magic-string": "^0.30.17",

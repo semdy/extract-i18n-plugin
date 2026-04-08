@@ -212,7 +212,7 @@ module.exports = {
 };
 ```
 
-babel插件不会自动带入extract-i18n.config.js中的配置，但会带上defaultOptions，优先级：userConfig > defaultOptions
+参数优先级：同上
 
 ## UmiJS
 
