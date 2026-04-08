@@ -1,0 +1,4 @@
+{
+  "extends": ["github>unjs/renovate-config"],
+  "rebaseWhen": "behind-base-branch"
+}
