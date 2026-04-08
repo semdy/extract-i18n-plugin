@@ -197,14 +197,12 @@ Parameter priority: same as above
 
 ```javascript
 // babel.config.js
-const config = require("./extract-i18n.config");
 module.exports = {
   presets: ["@vue/cli-plugin-babel/preset"],
   plugins: [
     [
       "extract-i18n-plugin/babel-plugin-i18n",
       {
-        ...config,
         ...userConfig
       }
     ]
