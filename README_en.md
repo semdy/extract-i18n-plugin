@@ -218,7 +218,6 @@ Parameter priority: same as above
 // config/config.ts
 import { defineConfig } from "@umijs/max";
 import { vitePluginI18n } from "extract-i18n-plugin";
-import userConfig from '../extract-i18n.config';
 
 export default defineConfig({
   // Approach 1（Recommended）
