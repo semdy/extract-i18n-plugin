@@ -111,7 +111,7 @@ const defaultOptions = {
 
 ## Configuration file
 
-Create extract-i18n.config.js in the project root directory for CLI and vite/webpack/babel plugin parameter configuration. Example:
+Create extract-i18n.config.(js|ts|mjs|cjs) in the project root directory for CLI and vite/rollup/webpack/babel plugin parameter configuration. Example:
 
 ```javascript
 import { YoudaoTranslator } from "extract-i18n-plugin/translators";
