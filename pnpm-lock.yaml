@@ -89,10 +89,10 @@ importers:
         version: 4.0.9
       prettier-plugin-svelte:
         specifier: ^3.5.1
-        version: 3.5.1(prettier@3.8.2)(svelte@5.55.2)
+        version: 3.5.1(prettier@3.8.2)(svelte@5.55.3)
       svelte:
-        specifier: ^5.55.2
-        version: 5.55.2
+        specifier: ^5.55.3
+        version: 5.55.3
 
 packages:
 
@@ -1070,8 +1070,8 @@ packages:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
     engines: {node: '>= 0.8'}
 
-  svelte@5.55.2:
-    resolution: {integrity: sha512-z41M/hi0ZPTzrwVKLvB/R1/Oo08gL1uIib8HZ+FncqxxtY9MLb01emg2fqk+WLZ/lNrrtNDFh7BZLDxAHvMgLw==}
+  svelte@5.55.3:
+    resolution: {integrity: sha512-dS1N+i3bA1v+c4UDb750MlN5vCO82G6vxh8HeTsPsTdJ1BLsN1zxSyDlIdBBqUjqZ/BxEwM8UrFf98aaoVnZFQ==}
     engines: {node: '>=18'}
 
   tinyglobby@0.2.16:
@@ -1926,10 +1926,10 @@ snapshots:
     dependencies:
       htmljs-parser: 5.10.2
 
-  prettier-plugin-svelte@3.5.1(prettier@3.8.2)(svelte@5.55.2):
+  prettier-plugin-svelte@3.5.1(prettier@3.8.2)(svelte@5.55.3):
     dependencies:
       prettier: 3.8.2
-      svelte: 5.55.2
+      svelte: 5.55.3
 
   prettier@3.8.2: {}
 
@@ -1984,7 +1984,7 @@ snapshots:
 
   statuses@2.0.2: {}
 
-  svelte@5.55.2:
+  svelte@5.55.3:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.5.5
