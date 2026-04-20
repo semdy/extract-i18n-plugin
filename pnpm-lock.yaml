@@ -42,8 +42,8 @@ importers:
         specifier: ^3.5.32
         version: 3.5.32
       axios:
-        specifier: ^1.15.0
-        version: 1.15.0
+        specifier: ^1.15.1
+        version: 1.15.1
       c12:
         specifier: ^4.0.0-beta.4
         version: 4.0.0-beta.4(chokidar@5.0.0)(dotenv@17.4.1)(giget@3.2.0)(jiti@2.6.1)
@@ -79,8 +79,8 @@ importers:
         version: 5.4.21(@types/node@25.0.3)
     devDependencies:
       '@angular/compiler':
-        specifier: ^21.2.8
-        version: 21.2.8
+        specifier: ^21.2.9
+        version: 21.2.9
       '@glimmer/syntax':
         specifier: ^0.95.0
         version: 0.95.0
@@ -96,8 +96,8 @@ importers:
 
 packages:
 
-  '@angular/compiler@21.2.8':
-    resolution: {integrity: sha512-Il9KlT6qX8rWmun5jY6wMLx56bCQZpOVIFEyHM4ai2wmxvbqyxgRFKDs4iMRNn1h04Tgupl6cKSqP9lecIvH6w==}
+  '@angular/compiler@21.2.9':
+    resolution: {integrity: sha512-clsK1EsSPtAuqlRl4CciA/gsvsW7xe0eWcvHxtrMW6DYaUJ6X4AAuDxEEJ5cf/3Mpw4s8KssjIUPPtbrUIGLSQ==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
 
   '@babel/code-frame@7.29.0':
@@ -702,8 +702,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.15.0:
-    resolution: {integrity: sha512-wWyJDlAatxk30ZJer+GeCWS209sA42X+N5jU2jy6oHTp7ufw8uzUTVFBX9+wTfAlhiJXGS0Bq7X6efruWjuK9Q==}
+  axios@1.15.1:
+    resolution: {integrity: sha512-WOG+Jj8ZOvR0a3rAn+Tuf1UQJRxw5venr6DgdbJzngJE3qG7X0kL83CZGpdHMxEm+ZK3seAbvFsw4FfOfP9vxg==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -1154,7 +1154,7 @@ packages:
 
 snapshots:
 
-  '@angular/compiler@21.2.8':
+  '@angular/compiler@21.2.9':
     dependencies:
       tslib: 2.8.1
 
@@ -1600,7 +1600,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.15.0:
+  axios@1.15.1:
     dependencies:
       follow-redirects: 1.15.11
       form-data: 4.0.5
