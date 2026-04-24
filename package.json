@@ -129,6 +129,6 @@
     "@glimmer/syntax": "^0.95.0",
     "prettier-plugin-marko": "^4.0.9",
     "prettier-plugin-svelte": "^3.5.1",
-    "svelte": "^5.55.4"
+    "svelte": "^5.55.5"
   }
 }
