@@ -79,19 +79,19 @@ importers:
         version: 5.4.21(@types/node@25.0.3)
     devDependencies:
       '@angular/compiler':
-        specifier: ^21.2.13
+        specifier: 21.2.13
         version: 21.2.13
       '@glimmer/syntax':
-        specifier: ^0.95.0
+        specifier: 0.95.0
         version: 0.95.0
       prettier-plugin-marko:
-        specifier: ^4.0.9
+        specifier: 4.0.9
         version: 4.0.9
       prettier-plugin-svelte:
-        specifier: ^4.0.0
+        specifier: 4.0.1
         version: 4.0.1(prettier@3.8.3)(svelte@5.55.8)
       svelte:
-        specifier: ^5.55.8
+        specifier: 5.55.8
         version: 5.55.8
 
 packages:
