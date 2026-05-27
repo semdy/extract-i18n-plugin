@@ -128,7 +128,7 @@
     "@angular/compiler": "^21.2.13",
     "@glimmer/syntax": "^0.95.0",
     "prettier-plugin-marko": "^4.0.9",
-    "prettier-plugin-svelte": "^3.5.2",
+    "prettier-plugin-svelte": "^4.0.0",
     "svelte": "^5.55.8"
   }
 }
