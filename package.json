@@ -76,7 +76,7 @@
     "@angular/compiler": "^21.2.14",
     "@glimmer/syntax": "*",
     "prettier-plugin-marko": "^4.0.9",
-    "prettier-plugin-svelte": "^3.5.2",
+    "prettier-plugin-svelte": "^4.0.1",
     "svelte": "^4 || ^5",
     "vite": ">5.0.0"
   },
