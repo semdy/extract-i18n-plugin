@@ -9,22 +9,22 @@ importers:
   .:
     dependencies:
       '@babel/core':
-        specifier: ^7.29.0
+        specifier: ^7.29.7
         version: 7.29.7
       '@babel/generator':
-        specifier: ^7.29.1
+        specifier: ^7.29.7
         version: 7.29.7
       '@babel/helper-plugin-utils':
-        specifier: ^7.28.6
+        specifier: ^7.29.7
         version: 7.29.7
       '@babel/parser':
-        specifier: ^7.29.3
+        specifier: ^7.29.7
         version: 7.29.7
       '@babel/traverse':
-        specifier: ^7.29.0
+        specifier: ^7.29.7
         version: 7.29.7
       '@babel/types':
-        specifier: ^7.29.0
+        specifier: ^7.29.7
         version: 7.29.7
       '@rollup/pluginutils':
         specifier: ^5.3.0
@@ -79,8 +79,8 @@ importers:
         version: 8.0.14(@types/node@25.9.1)(esbuild@0.28.0)
     devDependencies:
       '@angular/compiler':
-        specifier: 21.2.13
-        version: 21.2.13
+        specifier: 21.2.14
+        version: 21.2.14
       '@glimmer/syntax':
         specifier: 0.95.0
         version: 0.95.0
@@ -89,15 +89,15 @@ importers:
         version: 4.0.9
       prettier-plugin-svelte:
         specifier: 4.0.1
-        version: 4.0.1(prettier@3.8.3)(svelte@5.55.8)
+        version: 4.0.1(prettier@3.8.3)(svelte@5.55.9)
       svelte:
-        specifier: 5.55.8
-        version: 5.55.8
+        specifier: 5.55.9
+        version: 5.55.9
 
 packages:
 
-  '@angular/compiler@21.2.13':
-    resolution: {integrity: sha512-0OZk5ujHgowRme3iXJ1Ce1OI3eTDcGovBARBiyJT0E8kt9Y0TdQdGaYMRrNN1UzDv4hk8f1d/xVeF0BpMTvqPQ==}
+  '@angular/compiler@21.2.14':
+    resolution: {integrity: sha512-8mqgwRYfn2Z1vg/5YVt60dDBattnZL45nNJd2vTMwAiDTzhWhgKgRWKOeVL0aj2JqHeHiwuIlrLnz46acJMulQ==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
 
   '@babel/code-frame@7.29.7':
@@ -970,8 +970,8 @@ packages:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
     engines: {node: '>= 0.8'}
 
-  svelte@5.55.8:
-    resolution: {integrity: sha512-4D6lyrMHmDaZalQOEBMCWCCidyZjSnec14/oPn0k627G6goxcck9xqMwz1tFLlQz+ZFvtTTHfFOlUayuAz0z6Q==}
+  svelte@5.55.9:
+    resolution: {integrity: sha512-fTjjT8cHLDwigcu2j3pv7Jq04LklXevPB8uBgyHNiTXv+RMNvVnrjS4UEYrLMkhuq1vpCodHjiW+z/95SDs/fg==}
     engines: {node: '>=18'}
 
   tinyglobby@0.2.16:
@@ -1066,7 +1066,7 @@ packages:
 
 snapshots:
 
-  '@angular/compiler@21.2.13':
+  '@angular/compiler@21.2.14':
     dependencies:
       tslib: 2.8.1
 
@@ -1783,10 +1783,10 @@ snapshots:
     dependencies:
       htmljs-parser: 5.10.2
 
-  prettier-plugin-svelte@4.0.1(prettier@3.8.3)(svelte@5.55.8):
+  prettier-plugin-svelte@4.0.1(prettier@3.8.3)(svelte@5.55.9):
     dependencies:
       prettier: 3.8.3
-      svelte: 5.55.8
+      svelte: 5.55.9
 
   prettier@3.8.3: {}
 
@@ -1828,7 +1828,7 @@ snapshots:
 
   statuses@2.0.2: {}
 
-  svelte@5.55.8:
+  svelte@5.55.9:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.5.5
