@@ -73,10 +73,10 @@
     "build": "node build.js"
   },
   "peerDependencies": {
-    "@angular/compiler": "^21.2.15",
+    "@angular/compiler": "^21.2.16",
     "@glimmer/syntax": "*",
     "prettier-plugin-marko": "^4.0.9",
-    "prettier-plugin-svelte": "^4.0.1",
+    "prettier-plugin-svelte": "^4.1.0",
     "svelte": "^4 || ^5",
     "vite": ">5.0.0"
   },
@@ -112,7 +112,7 @@
     "@vitalets/google-translate-api": "^9.2.1",
     "@vue/compiler-dom": "^3.5.35",
     "@vue/compiler-sfc": "^3.5.35",
-    "axios": "^1.16.1",
+    "axios": "^1.17.0",
     "c12": "^4.0.0-beta.5",
     "crypto-js": "^4.2.0",
     "esbuild": "^0.28.0",
@@ -121,14 +121,14 @@
     "htmljs-parser": "^5.10.2",
     "magic-string": "^0.30.21",
     "prettier": "^3.8.3",
-    "tinyglobby": "^0.2.16",
+    "tinyglobby": "^0.2.17",
     "tunnel": "0.0.6"
   },
   "devDependencies": {
-    "@angular/compiler": "21.2.15",
+    "@angular/compiler": "21.2.16",
     "@glimmer/syntax": "0.95.0",
     "prettier-plugin-marko": "4.0.9",
-    "prettier-plugin-svelte": "4.0.1",
-    "svelte": "5.56.0"
+    "prettier-plugin-svelte": "4.1.0",
+    "svelte": "5.56.3"
   }
 }
