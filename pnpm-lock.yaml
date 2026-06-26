@@ -42,8 +42,8 @@ importers:
         specifier: ^3.5.38
         version: 3.5.38
       axios:
-        specifier: ^1.18.0
-        version: 1.18.0
+        specifier: ^1.18.1
+        version: 1.18.1
       c12:
         specifier: ^4.0.0-beta.5
         version: 4.0.0-beta.5
@@ -60,8 +60,8 @@ importers:
         specifier: ^11.3.5
         version: 11.3.5
       htmljs-parser:
-        specifier: ^5.10.2
-        version: 5.10.2
+        specifier: ^5.11.0
+        version: 5.11.0
       magic-string:
         specifier: ^0.30.21
         version: 0.30.21
@@ -560,8 +560,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.18.0:
-    resolution: {integrity: sha512-E32NzpYKp++W7XRe52rHiXV2ehxmh3wbdgO7MHeFM+vqxLBYHzt0ElkiImtOBxtOmyp0yoC8C6uESVV84Y2/hw==}
+  axios@1.18.1:
+    resolution: {integrity: sha512-3nTvFlvpn9Zu/RkHUqtc7/+al4UpRW5az71ap5zccp6e8RAYEzhMTecX8Dz1wWDYrPpUoB1HAQEGEAEvUr7S9g==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -778,8 +778,8 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
-  htmljs-parser@5.10.2:
-    resolution: {integrity: sha512-Db/pHZehPxGD8Cy0NvACoMfnVQqfgEiK7z+7cuEDOeJdnzuomyaw3I31A+1uoZmS6IjvTD5iuFA+XL2LE+SieA==}
+  htmljs-parser@5.11.0:
+    resolution: {integrity: sha512-YXdNqYB/FChJMpCG+UfVS/q/zfFErui92zIIduCFT71C3F6+lZWE4K6l5nGfFWQ2w4GCkgH/eEWQ1nWayBXIDQ==}
 
   http-errors@2.0.1:
     resolution: {integrity: sha512-4FbRdAX+bSdmo4AUFuS0WNiPz8NgFt+r8ThgNWmlrjQjt1Q7ZR9+zTlce2859x4KSXrwIsaeTqDoKQmtP8pLmQ==}
@@ -1476,7 +1476,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.18.0:
+  axios@1.18.1:
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.6
@@ -1676,7 +1676,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  htmljs-parser@5.10.2: {}
+  htmljs-parser@5.11.0: {}
 
   http-errors@2.0.1:
     dependencies:
@@ -1810,7 +1810,7 @@ snapshots:
 
   prettier-plugin-marko@4.0.9:
     dependencies:
-      htmljs-parser: 5.10.2
+      htmljs-parser: 5.11.0
 
   prettier-plugin-svelte@4.1.1(prettier@3.8.4)(svelte@5.56.3):
     dependencies:
