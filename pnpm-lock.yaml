@@ -36,11 +36,11 @@ importers:
         specifier: ^9.2.1
         version: 9.2.1
       '@vue/compiler-dom':
-        specifier: ^3.5.38
-        version: 3.5.38
+        specifier: ^3.5.39
+        version: 3.5.39
       '@vue/compiler-sfc':
-        specifier: ^3.5.38
-        version: 3.5.38
+        specifier: ^3.5.39
+        version: 3.5.39
       axios:
         specifier: ^1.18.1
         version: 1.18.1
@@ -60,14 +60,14 @@ importers:
         specifier: ^11.3.5
         version: 11.3.5
       htmljs-parser:
-        specifier: ^5.11.0
-        version: 5.11.0
+        specifier: ^5.12.0
+        version: 5.12.0
       magic-string:
         specifier: ^0.30.21
         version: 0.30.21
       prettier:
-        specifier: ^3.8.4
-        version: 3.8.4
+        specifier: ^3.9.1
+        version: 3.9.4
       tinyglobby:
         specifier: ^0.2.17
         version: 0.2.17
@@ -79,8 +79,8 @@ importers:
         version: 8.0.16(@types/node@25.9.3)(esbuild@0.28.1)
     devDependencies:
       '@angular/compiler':
-        specifier: 22.0.2
-        version: 22.0.2
+        specifier: 22.0.4
+        version: 22.0.4
       '@glimmer/syntax':
         specifier: 0.95.0
         version: 0.95.0
@@ -89,15 +89,15 @@ importers:
         version: 4.0.9
       prettier-plugin-svelte:
         specifier: 4.1.1
-        version: 4.1.1(prettier@3.8.4)(svelte@5.56.3)
+        version: 4.1.1(prettier@3.9.4)(svelte@5.56.4)
       svelte:
-        specifier: 5.56.3
-        version: 5.56.3
+        specifier: 5.56.4
+        version: 5.56.4
 
 packages:
 
-  '@angular/compiler@22.0.2':
-    resolution: {integrity: sha512-5G+h/4/iCfqdTBsSgjB46Oe4oC6jXutCpFc5JYWRpnJWsbp3UfwRhwGVWIV1DBPnR8H/3QZzteRP1jINiH5+hg==}
+  '@angular/compiler@22.0.4':
+    resolution: {integrity: sha512-PvbsPr3d0OHm90vgq1v+0oPP/oHNuCcZQAhhD3fhHlx3DTxf6nkjUqBulzdJ6d5QwDsy378pwf8+dpGquFzbGQ==}
     engines: {node: ^22.22.3 || ^24.15.0 || >=26.0.0}
 
   '@babel/code-frame@8.0.0':
@@ -529,20 +529,20 @@ packages:
     resolution: {integrity: sha512-zlwQWSjXUZhbZQ6qwtIQ7GdYXFQmJ4wYqzcrYJUxtvzQQwUP+uKUb/SRJaBOQuBntjBjzcdcJoLFrpCKUbIkOg==}
     engines: {node: '>=14'}
 
-  '@vue/compiler-core@3.5.38':
-    resolution: {integrity: sha512-s99aGxWYig9ErHbct27KXEGhrBYlRI6c4MwAgXErOAbX9xiW37/uMa+XUDO69zLz83dng8UUZ70CTOJrLrYrEQ==}
+  '@vue/compiler-core@3.5.39':
+    resolution: {integrity: sha512-16KBTEXAJCpDr0mwlw+AZyhu8iyC7R3S2vBwsI7QnWJU6X3WKc9VKeNEZpiMdZ569qWhz9574L3vV55qRL0Vtw==}
 
-  '@vue/compiler-dom@3.5.38':
-    resolution: {integrity: sha512-JTqp25l8aFfJYF7/KmsXZjAxJz7T+SjmTJLoXVjHtc2BrSgSiW2n9Aem/cWq1OPe68A8JL06B3eVdhlP0H4TVw==}
+  '@vue/compiler-dom@3.5.39':
+    resolution: {integrity: sha512-oQPigALqYbNxTNPvNgSOe+czwVExfbVF02lz8jP0S3AXJiu3jxYDygNUiqSep4ezzW8XgnubqH63My2A7JR/vg==}
 
-  '@vue/compiler-sfc@3.5.38':
-    resolution: {integrity: sha512-DuA2GiZawSEW442iw/9+Fkol8hTgb4Ke5KkhmSry65QA7YuyMbIdy8p0XZRMvNwJdgRz307W8g1CSzdvS4nuNg==}
+  '@vue/compiler-sfc@3.5.39':
+    resolution: {integrity: sha512-d0ki86iOyN8LoZPBmk5SJWNwHP19CnDDCfuo//+2WJa2g5Ke0Jay983PIBIcSSzldC68I8DrD5GrHV3OSDfodg==}
 
-  '@vue/compiler-ssr@3.5.38':
-    resolution: {integrity: sha512-7s+W5Gc42FGxZMcuwl8H5B29T8BJPMdBT7KHFE+BbAuZ/iTEdTtv7z2XiMjiaUUw4w3ZcCEdHs36RuYJ2VA7bA==}
+  '@vue/compiler-ssr@3.5.39':
+    resolution: {integrity: sha512-Ce7/wvwMHai74bdszfXExdazFigYnlF9zgCmEQUcM1j0fOymlouZ7XilTYNo8oUjhlnjYOZbGrcYKuqjz89Ucw==}
 
-  '@vue/shared@3.5.38':
-    resolution: {integrity: sha512-FTW0AFZNaK5/mOqvGBwVfUlNLU38TiQn4+DQgIFUnrBBJQ1crMJ82yeGQLV5jyKFsO8yRukpbuP7x+nRbH6aug==}
+  '@vue/shared@3.5.39':
+    resolution: {integrity: sha512-l1rrBtBfTnmxvtsvdQDXltUUy8S1Y+ZaqdfUzmAnJkTd8Z8rv5v/ytW+TKiqEOWyHPoqtPlNFSs0lhRmYVSHVA==}
 
   acorn@8.17.0:
     resolution: {integrity: sha512-xRQbDb9BnwDafYNn6Vwl839DYVjqXYb1XVGtWAZ1kcDc6iwAL4hg3B1dZlRiuENFeO2H53gFG3in621AdERVAg==}
@@ -699,8 +699,8 @@ packages:
   esm-env@1.2.2:
     resolution: {integrity: sha512-Epxrv+Nr/CaL4ZcFGPJIYLWFom+YeV1DqMLHJoEd9SYRxNbaFruBwfEX/kkHUJf55j2+TUbmDcmuilbP1TmXHA==}
 
-  esrap@2.2.11:
-    resolution: {integrity: sha512-gPdx+I+BjYEinNMQaBXFjbaJVyoPMU4ZODg5mE+M4DqVG9VusAVHHjcBX+zqyITlI0DIARwDMMzZwAWj36dRoQ==}
+  esrap@2.2.13:
+    resolution: {integrity: sha512-m8jH5hZgJE2RRUK/jjkGPcJEDAV+dYnZYFkosQaPTcE+Yw4xynXHOo6FUdwaWBtdR3b1MMa7wEDTSHeR2VWsGA==}
     peerDependencies:
       '@typescript-eslint/types': ^8.2.0
     peerDependenciesMeta:
@@ -778,8 +778,8 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
-  htmljs-parser@5.11.0:
-    resolution: {integrity: sha512-YXdNqYB/FChJMpCG+UfVS/q/zfFErui92zIIduCFT71C3F6+lZWE4K6l5nGfFWQ2w4GCkgH/eEWQ1nWayBXIDQ==}
+  htmljs-parser@5.12.0:
+    resolution: {integrity: sha512-AX7R1/VZXAFuywmX6xWIx+oYiSA8py1yUh+tPka+rVb+QIa+Gjw/nlDhNK+DYTYoYLOQ9J7pUGtsEoJj9ve6Zg==}
 
   http-errors@2.0.1:
     resolution: {integrity: sha512-4FbRdAX+bSdmo4AUFuS0WNiPz8NgFt+r8ThgNWmlrjQjt1Q7ZR9+zTlce2859x4KSXrwIsaeTqDoKQmtP8pLmQ==}
@@ -962,8 +962,8 @@ packages:
       prettier: ^3.0.0
       svelte: ^5.0.0
 
-  prettier@3.8.4:
-    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
+  prettier@3.9.4:
+    resolution: {integrity: sha512-yWG/o/4oJfo036EKAfK6ACAoDOfHeRHx4tuxkfBZiauURiaSmYwlpOr5LQqKtIkRD2z1PLteme2WoxEnj4tHTg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -998,8 +998,8 @@ packages:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
     engines: {node: '>= 0.8'}
 
-  svelte@5.56.3:
-    resolution: {integrity: sha512-w7JvrM5IFl5cmfbY0TLik9o7mjRUJmRMhOR51tBPu708Gr/MjbGs7VnJnr/B0CaXeI4vtnOh7RKxDr0cwhMdDA==}
+  svelte@5.56.4:
+    resolution: {integrity: sha512-/d0QHehmRuJW8gVz395MTkPcPozxzdjBMBE8oEYGz8O3b9KTMzzQ9ZHJQLuFKOHOPQbU6kx/X4iid/EBBzH7iw==}
     engines: {node: '>=18'}
 
   tinyglobby@0.2.17:
@@ -1091,7 +1091,7 @@ packages:
 
 snapshots:
 
-  '@angular/compiler@22.0.2':
+  '@angular/compiler@22.0.4':
     dependencies:
       tslib: 2.8.1
 
@@ -1432,37 +1432,37 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@vue/compiler-core@3.5.38':
+  '@vue/compiler-core@3.5.39':
     dependencies:
       '@babel/parser': 7.29.7
-      '@vue/shared': 3.5.38
+      '@vue/shared': 3.5.39
       entities: 7.0.1
       estree-walker: 2.0.2
       source-map-js: 1.2.1
 
-  '@vue/compiler-dom@3.5.38':
+  '@vue/compiler-dom@3.5.39':
     dependencies:
-      '@vue/compiler-core': 3.5.38
-      '@vue/shared': 3.5.38
+      '@vue/compiler-core': 3.5.39
+      '@vue/shared': 3.5.39
 
-  '@vue/compiler-sfc@3.5.38':
+  '@vue/compiler-sfc@3.5.39':
     dependencies:
       '@babel/parser': 7.29.7
-      '@vue/compiler-core': 3.5.38
-      '@vue/compiler-dom': 3.5.38
-      '@vue/compiler-ssr': 3.5.38
-      '@vue/shared': 3.5.38
+      '@vue/compiler-core': 3.5.39
+      '@vue/compiler-dom': 3.5.39
+      '@vue/compiler-ssr': 3.5.39
+      '@vue/shared': 3.5.39
       estree-walker: 2.0.2
       magic-string: 0.30.21
       postcss: 8.5.15
       source-map-js: 1.2.1
 
-  '@vue/compiler-ssr@3.5.38':
+  '@vue/compiler-ssr@3.5.39':
     dependencies:
-      '@vue/compiler-dom': 3.5.38
-      '@vue/shared': 3.5.38
+      '@vue/compiler-dom': 3.5.39
+      '@vue/shared': 3.5.39
 
-  '@vue/shared@3.5.38': {}
+  '@vue/shared@3.5.39': {}
 
   acorn@8.17.0: {}
 
@@ -1609,7 +1609,7 @@ snapshots:
 
   esm-env@1.2.2: {}
 
-  esrap@2.2.11:
+  esrap@2.2.13:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
@@ -1676,7 +1676,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  htmljs-parser@5.11.0: {}
+  htmljs-parser@5.12.0: {}
 
   http-errors@2.0.1:
     dependencies:
@@ -1810,14 +1810,14 @@ snapshots:
 
   prettier-plugin-marko@4.0.9:
     dependencies:
-      htmljs-parser: 5.11.0
+      htmljs-parser: 5.12.0
 
-  prettier-plugin-svelte@4.1.1(prettier@3.8.4)(svelte@5.56.3):
+  prettier-plugin-svelte@4.1.1(prettier@3.9.4)(svelte@5.56.4):
     dependencies:
-      prettier: 3.8.4
-      svelte: 5.56.3
+      prettier: 3.9.4
+      svelte: 5.56.4
 
-  prettier@3.8.4: {}
+  prettier@3.9.4: {}
 
   proxy-from-env@2.1.0: {}
 
@@ -1857,7 +1857,7 @@ snapshots:
 
   statuses@2.0.2: {}
 
-  svelte@5.56.3:
+  svelte@5.56.4:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -1870,7 +1870,7 @@ snapshots:
       clsx: 2.1.1
       devalue: 5.8.1
       esm-env: 1.2.2
-      esrap: 2.2.11
+      esrap: 2.2.13
       is-reference: 3.0.3
       locate-character: 3.0.0
       magic-string: 0.30.21
