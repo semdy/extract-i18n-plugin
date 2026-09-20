@@ -458,21 +458,25 @@ translator: new BaiduTranslator({
 ...
 ```
 
-## VolcEngine AI Translate
+## AI Translate
 
-Supports calling `doubao` or `deepseek` for translation. AI large model translation is more accurate than traditional API translation but takes longer.
+Supports all compatible with OpenAI Chat Completions big model translation via API.
+
+Example for VolcEngine AI Translate: It supports calling `doubao` or `deepseek` for translation. AI large model translation is more accurate than traditional API translation but takes longer.
 
 VolcEngine Large Model Documentation: https://www.volcengine.com/docs/82379/1099455.
 
 Requires enabling large model services and applying for API access, [API documentation](https://www.volcengine.com/docs/82379/1298454).
 
 ```javascript
-import { VolcEngineTranslator } from 'extract-i18n-plugin/translators'
+import { AITranslator } from 'extract-i18n-plugin/translators'
 
 ...
-translator: new VolcEngineTranslator({
-    apiKey: 'your applied apiKey',
-    model: 'the model you want to call, e.g.: `doubao-1-5-pro-32k-250115`, make sure you have enabled the corresponding model in the console before use'
+translator: new AITranslator({
+  apiUrl: 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
+  apiKey: 'your applied apiKey',
+  model: 'the model you want to call, e.g.: `doubao-1-5-pro-32k-250115`, make sure you have enabled the corresponding model in the console before use',
+  systemPrompt: '...', // optional, default is a system prompt in plugin
 })
 ...
 ```

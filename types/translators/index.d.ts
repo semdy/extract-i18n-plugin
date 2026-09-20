@@ -137,10 +137,13 @@ declare class EmptyTranslator extends Translator {
 /** @deprecated 别名导出，兼容旧版本 */
 declare const ScanTranslator: typeof EmptyTranslator;
 
-interface VolcengineTranslatorOption {
+interface AITranslatorOption {
+    apiUrl: string;
     apiKey: string;
     /** 使用的ai模型，可选值请参阅火山引擎控制台的模型列表，如`doubao-1-5-pro-32k-250115`，并请确保使用前已在控制台开通了对应模型 */
     model: string;
+    /** 自定义系统提示词，用于控制模型的行为 */
+    systemPrompt?: string;
     /** 对本项目的简短描述，在有描述的情况下大模型的翻译结果可能会更加准确 */
     desc?: string;
     /** 网络代理配置 */
@@ -159,15 +162,16 @@ interface VolcengineTranslatorOption {
  * ```ts
  * vitePluginsAutoI18n({
     ...
-    translator: new VolcengineTranslator({
+    translator: new AITranslator({
+        apiUrl: '你申请的apiUrl',
         apiKey: '你申请的apiKey',
         model: '你要调用的模型，如：`doubao-1-5-pro-32k-250115`，请确保使用前已在控制台开通了对应模型'
     })
 })
  * ```
  */
-declare class VolcengineTranslator extends Translator {
-    constructor(option: VolcengineTranslatorOption);
+declare class AITranslator extends Translator {
+    constructor(option: AITranslatorOption);
 }
 
 
@@ -180,8 +184,8 @@ export {
     ScanTranslator,
     Translator,
     TranslatorOption,
-    VolcengineTranslator,
-    VolcengineTranslatorOption,
+    AITranslator,
+    AITranslatorOption,
     YoudaoTranslator,
     YoudaoTranslatorOption
 };

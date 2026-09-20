@@ -469,19 +469,23 @@ translator: new BaiduTranslator({
 ...
 ```
 
-## 火山引擎AI Translate
+## AI Translate
 
-支持调用 `doubao` 或 `deepseek` 进行翻译，AI大模型的翻译效果会比传统的API翻译更准确，但耗时较长。
+只要是兼容OpenAI Chat Completions风格的大模型都支持。
+
+以火山引擎AI为例：它支持调用 `doubao` 或 `deepseek` 进行翻译，AI大模型的翻译效果会比传统的API翻译更准确，但耗时较长。
 火山引擎大模型介绍：https://www.volcengine.com/docs/82379/1099455。
 需要开通大模型服务并申请API，[api文档](https://www.volcengine.com/docs/82379/1298454)。
 
 ```javascript
-import { VolcEngineTranslator } from 'extract-i18n-plugin/translators'
+import { AITranslator } from 'extract-i18n-plugin/translators'
 
 ...
-translator: new VolcEngineTranslator({
+translator: new AITranslator({
+    apiUrl: 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
     apiKey: '你申请的apiKey',
-    model: '你要调用的模型，如：`doubao-1-5-pro-32k-250115`，请确保使用前已在控制台开通了对应模型'
+    model: '你要调用的模型，如：`doubao-1-5-pro-32k-250115`，请确保使用前已在控制台开通了对应模型',
+    systemPrompt: '...', // 可选，不传时将使用插件内默认的
 })
 ...
 ```
