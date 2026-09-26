@@ -78,9 +78,9 @@
     "prepack": "npm run build"
   },
   "peerDependencies": {
-    "@angular/compiler": "^22.1.7",
+    "@angular/compiler": "^22.1.8",
     "@glimmer/syntax": "*",
-    "prettier-plugin-marko": "^4.1.0",
+    "prettier-plugin-marko": "^4.1.1",
     "prettier-plugin-svelte": "^4.1.1",
     "svelte": "^4 || ^5",
     "vite": ">5.0.0"
@@ -118,22 +118,22 @@
     "@vue/compiler-dom": "^3.5.43",
     "@vue/compiler-sfc": "^3.5.43",
     "axios": "^1.20.0",
-    "c12": "^4.0.0-rc.1",
+    "c12": "^4.0.0-rc.2",
     "crypto-js": "^4.2.0",
     "esbuild": "^0.28.2",
     "esbuild-register": "^3.6.0",
-    "fs-extra": "^11.4.0",
-    "htmljs-parser": "^5.15.0",
-    "magic-string": "^1.4.1",
+    "fs-extra": "^11.4.1",
+    "htmljs-parser": "^5.16.0",
+    "magic-string": "^1.4.2",
     "mri": "^1.2.0",
-    "prettier": "^3.9.8",
+    "prettier": "^3.9.9",
     "tinyglobby": "^0.2.17",
     "tunnel": "0.0.6"
   },
   "devDependencies": {
-    "@angular/compiler": "^22.1.7",
+    "@angular/compiler": "^22.1.8",
     "@glimmer/syntax": "^0.95.0",
-    "prettier-plugin-marko": "^4.1.0",
+    "prettier-plugin-marko": "^4.1.1",
     "prettier-plugin-svelte": "^4.1.1",
     "svelte": "^5.57.1"
   }
