@@ -390,7 +390,16 @@ Additionally: If you don't want to use vite/webpack plugins, you can manually ca
 }
 ```
 
-- This plugin supports excluding extraction and transformation on a per-file basis. For cases where only certain parts of a file need to be excluded, it is recommended to define a method first and then configure that method in `excludedCall`. The recommended configuration is as follows:
+- **Partial Exclusion**
+
+  **Method 1: Use comments** to exclude an entire file or specific code blocks.
+
+  Add the comment `// extract-i18n ignore` at the top level of a file to exclude the entire file from extraction and transformation.
+
+  Use `// extract-i18n ignore-start` and `// extract-i18n ignore-end` to mark a code block whose contents should be excluded from extraction and transformation.
+
+  **Method 2: Use `excludedCall`** by defining a function and configuring it in `excludedCall`. The following configuration is recommended:
+
 
 ```javascript
 function $$t(text) {
