@@ -124,7 +124,7 @@
     "esbuild-register": "^3.6.0",
     "fs-extra": "^11.4.1",
     "htmljs-parser": "^5.18.0",
-    "magic-string": "^1.4.2",
+    "magic-string": "^1.4.3",
     "mri": "^1.2.0",
     "prettier": "^3.9.9",
     "tinyglobby": "^0.2.17",
