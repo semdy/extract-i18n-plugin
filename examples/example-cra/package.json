@@ -42,7 +42,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
-    "extract-i18n-plugin": "^2.0.3",
+    "extract-i18n-plugin": "^2.0.4",
     "globals": "^16.5.0",
     "react-app-rewired": "^2.2.1",
     "react-scripts": "^5.0.1",

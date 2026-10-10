@@ -5161,10 +5161,10 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-extract-i18n-plugin@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/extract-i18n-plugin/-/extract-i18n-plugin-2.0.3.tgz#1b627e0ed7c261d8344c5411f8fe3fa49d785e74"
-  integrity sha512-oq+iS5EZom/iZKqnjNCo9QE/bj8OdzXUESnKIHPldsb2b6b5B1gsZQKsVMwa26Lr8sWbka/YM4Yb8zYif9RbbQ==
+extract-i18n-plugin@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/extract-i18n-plugin/-/extract-i18n-plugin-2.0.4.tgz#8ffa548371c662aaca9f7f504ec0542c3f854282"
+  integrity sha512-kxuD9uoi79+QTB9ZctHRoeevdGnExLfObgMYV8E7K184tQgFHrYNWDWnJzH3HcYyYVGY5bSea8arbcxYoAJz5A==
   dependencies:
     "@babel/core" "^8.0.6"
     "@babel/generator" "^8.0.6"
