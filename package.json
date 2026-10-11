@@ -78,7 +78,7 @@
     "prepack": "npm run build"
   },
   "peerDependencies": {
-    "@angular/compiler": "^22.2.1",
+    "@angular/compiler": "^22.2.2",
     "@glimmer/syntax": "*",
     "prettier-plugin-marko": "^4.1.3",
     "prettier-plugin-svelte": "^4.1.1",
@@ -106,11 +106,11 @@
     }
   },
   "dependencies": {
-    "@babel/core": "^8.0.6",
+    "@babel/core": "^8.0.7",
     "@babel/generator": "^8.0.6",
     "@babel/helper-plugin-utils": "^8.0.1",
-    "@babel/parser": "^8.0.6",
-    "@babel/traverse": "^8.0.6",
+    "@babel/parser": "^8.0.7",
+    "@babel/traverse": "^8.0.7",
     "@babel/types": "^8.0.6",
     "@rollup/pluginutils": "^5.4.0",
     "@types/tunnel": "^0.0.7",
@@ -131,7 +131,7 @@
     "tunnel": "0.0.6"
   },
   "devDependencies": {
-    "@angular/compiler": "^22.2.1",
+    "@angular/compiler": "^22.2.2",
     "@glimmer/syntax": "^0.95.0",
     "prettier-plugin-marko": "^4.1.3",
     "prettier-plugin-svelte": "^4.1.1",
