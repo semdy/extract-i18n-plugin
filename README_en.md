@@ -83,10 +83,29 @@ const defaultOptions = {
   extraImports: null, // extra imports, format: [{ name: "t", as?: "_t" path: "@/i18n" }]
   extraImportIdentifier: null, // extra import identifier, such as：['customImport'] -> import { t, customImport } from "@/i18n"
   excludedCall: [], // Array of function names to exclude, built-in functions: see https://github.com/semdy/extract-i18n-plugin/blob/main/lib/utils.js#L402
-  includePath: ['src/'], // Array of paths to include
-  excludedPath: ['**/node_modules/**'], // Array of paths to exclude, refer to https://github.com/mrmlnc/fast-glob?tab=readme-ov-file#how-to-exclude-directory-from-reading
-  allowedExtensions: [".vue", ".nvue", ".uvue", ".svelte", ".tsx", ".ts", ".jsx", ".js", ".mjs", ".cjs", ".mts", ".cts", ".uts", ".marko", ".gjs",".gts",".hbs", ".html"], // Allowed file extensions for extraction
-  fromLang: 'zh-cn', // Source language, currently supported extraction languages: zh-cn(zh-tw), en, ja, ko, ru, use shouldExtract determine if should to extract for other languages
+  includePath: ["src/"], // Array of paths to include
+  excludedPath: ["**/node_modules/**"], // Array of paths to exclude, refer to https://github.com/mrmlnc/fast-glob?tab=readme-ov-file#how-to-exclude-directory-from-reading
+  allowedExtensions: [
+    ".vue",
+    ".nvue",
+    ".uvue",
+    ".svelte",
+    ".tsx",
+    ".ts",
+    ".jsx",
+    ".js",
+    ".mjs",
+    ".cjs",
+    ".mts",
+    ".cts",
+    ".uts",
+    ".marko",
+    ".gjs",
+    ".gts",
+    ".hbs",
+    ".html"
+  ], // Allowed file extensions for extraction
+  fromLang: "zh-cn", // Source language, currently supported extraction languages: zh-cn(zh-tw), en, ja, ko, ru, use shouldExtract determine if should to extract for other languages
   translateLangKeys: ["zh-tw", "en"], // Target language keys for translation
   i18nPkgImportPath: "@/i18n", // i18n package import path
   outputPath: "src/i18n", // Output path for extracted language packages
@@ -398,16 +417,36 @@ Additionally: If you don't want to use vite/webpack plugins, you can manually ca
 
   Use `// extract-i18n ignore-start` and `// extract-i18n ignore-end` to mark a code block whose contents should be excluded from extraction and transformation.
 
-  **Method 2: Use `excludedCall`** by defining a function and configuring it in `excludedCall`. The following configuration is recommended:
+Entire file ignore
 
+```javascript
+// extract-i18n ignore
+
+function fun() {
+  ...
+}
+```
+
+Block comments ignore
+
+```javascript
+// extract-i18n ignore-start
+const name = "text";
+const name2 = "text2";
+// extract-i18n ignore-end
+
+const other = "other"; // will still be extracted
+```
+
+**Method 2: Use `excludedCall`** by defining a function and configuring it in `excludedCall`. The following configuration is recommended:
 
 ```javascript
 function $$t(text) {
-  return text
+  return text;
 }
 
 {
-  excludedCall: ['$$t']
+  excludedCall: ["$$t"];
 }
 ```
 

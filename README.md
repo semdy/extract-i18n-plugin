@@ -83,10 +83,29 @@ const defaultOptions = {
   extraImports: null, // 额外的导入项, 格式：[{ name: "t", as?: "_t" path: "@/i18n" }]
   extraImportIdentifier: null, // 额外的导入项的标识符名称，如：['customImport'] -> import { t, customImport } from "@/i18n"
   excludedCall: [], // 排除的调用函数名称数组，目前已内置的函数请参阅：https://github.com/semdy/extract-i18n-plugin/blob/main/lib/utils.js#L402
-  includePath: ['src/'], // 包含路径的数组
-  excludedPath: ['**/node_modules/**'], // 排除路径的数组 refer to https://github.com/mrmlnc/fast-glob?tab=readme-ov-file#how-to-exclude-directory-from-reading
-  allowedExtensions: [".vue", ".nvue", ".uvue", ".svelte", ".tsx", ".ts", ".jsx", ".js", ".mjs", ".cjs", ".mts", ".cts", ".uts", ".marko", ".gjs",".gts",".hbs", ".html"], // 允许提取的文件扩展名
-  fromLang: 'zh-cn', // 源语言, 目前支持提取的语言有：zh-cn(zh-tw), en, ja, ko, ru，其它语言请使用shouldExtract判断是否要被提取
+  includePath: ["src/"], // 包含路径的数组
+  excludedPath: ["**/node_modules/**"], // 排除路径的数组 refer to https://github.com/mrmlnc/fast-glob?tab=readme-ov-file#how-to-exclude-directory-from-reading
+  allowedExtensions: [
+    ".vue",
+    ".nvue",
+    ".uvue",
+    ".svelte",
+    ".tsx",
+    ".ts",
+    ".jsx",
+    ".js",
+    ".mjs",
+    ".cjs",
+    ".mts",
+    ".cts",
+    ".uts",
+    ".marko",
+    ".gjs",
+    ".gts",
+    ".hbs",
+    ".html"
+  ], // 允许提取的文件扩展名
+  fromLang: "zh-cn", // 源语言, 目前支持提取的语言有：zh-cn(zh-tw), en, ja, ko, ru，其它语言请使用shouldExtract判断是否要被提取
   translateLangKeys: ["zh-tw", "en"], // 定义要翻译成哪些语言
   i18nPkgImportPath: "@/i18n", // i18n语言包导入路径
   outputPath: "src/i18n", // 提取的语言包输出文件路径
@@ -403,25 +422,45 @@ export default i18n;
 
   **方法一：使用注释** 支持忽略全部及部分忽略。
 
-    在文件顶层加注释  `// extract-i18n ignore` 将会忽略整个文件，在代码中加入注释块 `// extract-i18n ignore-start ... // extract-i18n ignore-end` 将会忽略注释内代码的提取和转换。
+  在文件顶层加注释 `// extract-i18n ignore` 将会忽略整个文件，在代码中加入注释块 `// extract-i18n ignore-start ... // extract-i18n ignore-end` 将会忽略注释内代码的提取和转换。
 
-  **方法二：定义方法** 将该方法配置到`excludedCall`中，推荐配置如下：
+整文件忽略
+
+```javascript
+// extract-i18n ignore
+
+function fun() {
+  ...
+}
+```
+
+区块注释忽略
+
+```javascript
+// extract-i18n ignore-start
+const name = "中文";
+const name2 = "中文2";
+// extract-i18n ignore-end
+
+const other = "其它"; // 仍然会被提取
+```
+
+**方法二：定义方法** 将该方法配置到`excludedCall`中，推荐配置如下：
 
 ```javascript
 // 定义一个方法，用于排除提取和转换
 function $$t(text) {
-  return text
+  return text;
 }
 // 配置excludedCall，将$$t方法排除
 {
-  excludedCall: ['$$t']
+  excludedCall: ["$$t"];
 }
 ```
 
 总结：
 
 纯文本编写有很好的便利性，但`$t()`有更好的稳定性和可靠性（特别是vue项目），当然也可以混用。该插件已经服务了公司内部多个涵盖React、Vue、uni-app(APP-PLUS、X、H5、小程序)的项目，不管用哪种方式，稳定性和可靠性都不错。
-
 
 # Translators
 
