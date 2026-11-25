@@ -197,7 +197,7 @@ export default {
 
 参数优先级：同上
 
-## Webpack plugin
+## Webpack/Rspack plugin
 
 ```javascript
 const { WebpackPluginI18n } = require("extract-i18n-plugin");
@@ -211,6 +211,20 @@ module.exports = {
     new WebpackPluginI18n(userConfig)
   ]
 };
+```
+
+参数优先级：同上
+
+## Rsbuild plugin
+
+```javascript
+// rsbuild.config.ts
+import { defineConfig } from "@rsbuild/core";
+import { rsbuildPluginI18n } from "extract-i18n-plugin";
+
+export default defineConfig({
+  plugins: [rsbuildPluginI18n()]
+});
 ```
 
 参数优先级：同上

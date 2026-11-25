@@ -186,7 +186,7 @@ export default {
 
 Parameter priority: userConfig > extract.config.js > defaultOptions
 
-## Webpack plugin
+## Webpack/Rspack plugin
 
 ```javascript
 const { WebpackPluginI18n } = require("extract-i18n-plugin");
@@ -200,6 +200,20 @@ module.exports = {
     new WebpackPluginI18n(userConfig)
   ]
 };
+```
+
+Parameter priority: same as above
+
+## Rsbuild plugin
+
+```javascript
+// rsbuild.config.ts
+import { defineConfig } from "@rsbuild/core";
+import { rsbuildPluginI18n } from "extract-i18n-plugin";
+
+export default defineConfig({
+  plugins: [rsbuildPluginI18n()]
+});
 ```
 
 Parameter priority: same as above

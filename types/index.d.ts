@@ -30,6 +30,7 @@ export { vitePluginI18n } from "./vite-plugin-i18n";
 export { vitePluginImportI18n } from "./vite-plugin-i18n-import";
 export { rollupPluginI18n } from "./rollup-plugin-i18n";
 export { rollupPluginImportI18n } from "./rollup-plugin-i18n-import";
+export { rsbuildPluginI18n } from "./rsbuild-plugin-i18n";
 export { WebpackPluginI18n } from "./webpack-plugin-i18n";
 export { webpackI18nLoader } from "./webpack-i18n-loader";
 export { webpackI18nImportLoader } from "./webpack-i18n-import-loader";
